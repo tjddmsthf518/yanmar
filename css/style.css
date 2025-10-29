@@ -28,6 +28,67 @@ header {
 
 .menu_bar {
   margin-left: 20px;
+  cursor: pointer;
+}
+
+.sub_menu{
+  max-width: 768px;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: 0.5s;
+  z-index: 50;
+}
+
+.sub_menu_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close{
+  width: 30px;
+  cursor: pointer;
+}
+
+.sub_menu_wrap{
+  padding: 60px 0;
+}
+
+.sub_menu_wrap li{
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 55px;
+}
+
+.product_click{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sub_menu_wrap img{
+  width: 30px;
+  height: 30px;
+  margin-left: 7px;
+  transition: 0.2s;
+}
+
+.sub_product{
+  display: none;
+}
+
+.sub_product li{
+  font-size: 20px;
+  margin-bottom: 22px;
+}
+
+.active{
+  right: 0;
 }
 /* header end */
 
@@ -57,12 +118,6 @@ header {
 }
 /* section_1 end */
 
-.section_2 h3 {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
 .con_2 {
   margin-bottom: 40px;
 }
@@ -81,15 +136,6 @@ header {
   margin-bottom: 13px;
 }
 
-.con_title_wrap_2 p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  opacity: 0.7;
-  margin-bottom: 25px;
-  letter-spacing: -2px;
-}
-
 .more_btn_2 a {
   font-size: 14px;
   font-weight: 700;
@@ -101,26 +147,11 @@ header {
   background-color: rgba(242, 242, 242, 40);
 }
 
-.section_3 h3 {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
 .con_title_wrap_3 h4 {
   font-size: 24px;
   font-weight: 700;
   opacity: 0.8;
   margin-bottom: 13px;
-}
-
-.con_title_wrap_3 p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: -2px;
-  opacity: 0.7;
-  margin-bottom: 25px;
 }
 
 .more_btn_3 {
@@ -161,7 +192,7 @@ header {
 }
 
 .title_wrap_4 {
-  width: 90%;
+  width: 100%;
   position: absolute;
   top: 245px;
   left: 50%;
@@ -221,3 +252,67 @@ header {
   width: 15px;
 }
 /* section_4 end */
+
+footer{
+  padding: 70px 20px 30px;
+}
+
+.footer_link a{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.legal{
+  margin-bottom: 20px;
+}
+
+.legal a{
+  margin-right: 20px;
+  opacity: 0.7;
+}
+
+.footer_link .privacy_policy{
+  font-weight: 500;
+}
+
+.support{
+  margin-bottom: 30px;
+}
+
+.support a{
+  margin-right: 24px;
+  opacity: 0.7;
+}
+
+.footer_line{
+  width: 100%;
+  height: 1px;
+  background-color: #f1f1f1;
+}
+
+.footer_logo{
+  width: 160px;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+
+.info{
+  margin-bottom: 18px;
+}
+
+.address,
+.number{
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.address{
+  margin-bottom: 5px;
+}
+
+.copylight{
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.5;
+}

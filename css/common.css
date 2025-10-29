@@ -1,3 +1,20 @@
 section:not(.section_1, .section_4) {
   padding: 95px 20px;
 }
+
+.section_2 h3,
+.section_3 h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.con_title_wrap_2 p,
+.con_title_wrap_3 p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.7;
+  margin-bottom: 25px;
+  letter-spacing: -2px;
+}

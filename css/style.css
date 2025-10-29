@@ -69,6 +69,7 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .sub_menu_wrap img{

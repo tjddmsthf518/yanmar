@@ -5,9 +5,12 @@ $(document).ready(function () {
 
     if (pageY > 60) {
       $("header").css({
+        maxWidth: 768,
+        width: "100%",
         position: "fixed",
         top: 0,
-        left: 0,
+        left: "50%",
+        transform: "translateX(-50%)",
         backgroundColor: "white",
       });
 
@@ -20,9 +23,12 @@ $(document).ready(function () {
       });
     } else if (pageY < 60) {
       $("header").css({
+        maxWidth: 768,
+        width: "100%",
         position: "absolute",
         top: 0,
-        left: 0,
+        left: "50%",
+        transform: "translateX(-50%)",
         backgroundColor: "unset",
       });
 

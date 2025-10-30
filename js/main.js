@@ -43,11 +43,13 @@ $(document).ready(function () {
   });
 
   $(".menu_bar, .menubar_black").click(function () {
-    $(".sub_menu").addClass("active");
+    // $(".sub_menu").addClass("active");
+    $(".sub_menu").fadeIn(300);
   });
 
   $(".close").click(function () {
-    $(".sub_menu").removeClass("active");
+    // $(".sub_menu").removeClass("active");
+    $(".sub_menu").fadeOut(300);
   });
 
   var clicked = "on";

@@ -31,7 +31,7 @@ header {
   cursor: pointer;
 }
 
-.sub_menu{
+.sub_menu {
   max-width: 768px;
   width: 100%;
   height: 100vh;
@@ -44,51 +44,65 @@ header {
   z-index: 50;
 }
 
-.sub_menu_header{
+.menu_black {
+  display: none;
+  align-items: center;
+}
+
+.menubar_black {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.sub_menu_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.close{
+.close {
   width: 30px;
   cursor: pointer;
 }
 
-.sub_menu_wrap{
+.sub_menu_wrap {
   padding: 60px 0;
 }
 
-.sub_menu_wrap li{
+.sub_menu_wrap li {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 55px;
 }
 
-.product_click{
+.product_click {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
   cursor: pointer;
 }
 
-.sub_menu_wrap img{
+.sub_menu_wrap img {
   width: 30px;
   height: 30px;
   margin-left: 7px;
   transition: 0.2s;
 }
 
-.sub_product{
+.sub_product {
   display: none;
 }
 
-.sub_product li{
+.sub_product li {
   font-size: 20px;
   margin-bottom: 22px;
 }
 
-.active{
+.sub_product a {
+  opacity: 0.8;
+}
+
+.active {
   right: 0;
 }
 /* header end */
@@ -213,6 +227,7 @@ header {
   font-weight: 400;
   color: white;
   opacity: 0.7;
+  display: block;
 }
 
 .con_wrap_4 {
@@ -254,65 +269,65 @@ header {
 }
 /* section_4 end */
 
-footer{
+footer {
   padding: 70px 20px 30px;
 }
 
-.footer_link a{
+.footer_link a {
   font-size: 14px;
   font-weight: 400;
 }
 
-.legal{
+.legal {
   margin-bottom: 20px;
 }
 
-.legal a{
+.legal a {
   margin-right: 20px;
   opacity: 0.7;
 }
 
-.footer_link .privacy_policy{
+.footer_link .privacy_policy {
   font-weight: 500;
 }
 
-.support{
+.support {
   margin-bottom: 30px;
 }
 
-.support a{
+.support a {
   margin-right: 24px;
   opacity: 0.7;
 }
 
-.footer_line{
+.footer_line {
   width: 100%;
   height: 1px;
   background-color: #f1f1f1;
 }
 
-.footer_logo{
+.footer_logo {
   width: 160px;
   margin-top: 30px;
   margin-bottom: 18px;
 }
 
-.info{
+.info {
   margin-bottom: 18px;
 }
 
 .address,
-.number{
+.number {
   font-size: 12px;
   font-weight: 400;
   opacity: 0.7;
 }
 
-.address{
+.address {
   margin-bottom: 5px;
 }
 
-.copylight{
+.copylight {
   font-size: 10px;
   font-weight: 400;
   opacity: 0.5;

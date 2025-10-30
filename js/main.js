@@ -1,6 +1,42 @@
 $(document).ready(function () {
+  $(window).scroll(function () {
+    var pageY = $(window).scrollTop();
+    var section_1_top = $(".section_1").offset().top;
 
-  $(".menu_bar").click(function () {
+    if (pageY > 60) {
+      $("header").css({
+        position: "fixed",
+        top: 0,
+        left: 0,
+        backgroundColor: "white",
+      });
+
+      $(".menu_black").css({
+        display: "flex",
+      });
+
+      $(".menu_wrap").css({
+        display: "none",
+      });
+    } else if (pageY < 60) {
+      $("header").css({
+        position: "absolute",
+        top: 0,
+        left: 0,
+        backgroundColor: "unset",
+      });
+
+      $(".menu_black").css({
+        display: "none",
+      });
+
+      $(".menu_wrap").css({
+        display: "flex",
+      });
+    }
+  });
+
+  $(".menu_bar, .menubar_black").click(function () {
     $(".sub_menu").addClass("active");
   });
 

@@ -12,16 +12,16 @@
 }
 
 .left_wrap {
-  padding: 195px 0 195px 50px;
+  padding: 150px 0 195px 50px;
 }
 
 .left_wrap h2 {
   font-size: 96px;
-  font-weight: 700;
+  font-weight: 900;
   color: #c91734;
   letter-spacing: -10px;
   margin-bottom: 30px;
-  /* font-style: italic; */
+  font-style: italic;
 }
 
 .left_wrap p {
@@ -29,7 +29,12 @@
   font-weight: 400;
   line-height: 30px;
   color: #1d1d1d;
-  opacity: 0.7;
+  opacity: 0.5;
+}
+
+.left_wrap span {
+  font-weight: 700;
+  opacity: 1;
 }
 
 .img_box {
@@ -49,36 +54,40 @@
 }
 
 .right_wrap {
-  padding: 260px 50px 260px 0;
+  padding: 440px 50px 260px 0;
 }
 
 .con_wrap {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.con {
-  width: 230px;
-  height: 230px;
-  border: 1px solid #f1f1f1;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
-.con img {
-  width: 60px;
-  margin: 0 auto 32px;
+.con {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.con a {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  padding: 20px;
 }
 
 .con p {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 400;
-  color: #1d1d1d;
-  opacity: 0.7;
-  letter-spacing: -5px;
+  color: #bbb;
+  letter-spacing: -2px;
+  transition: 0.5s;
+}
+
+.con:hover p {
+  color: #c91734;
 }
 
 .wrap {
